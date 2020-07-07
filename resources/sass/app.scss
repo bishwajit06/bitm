@@ -1,0 +1,101 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+*{
+    font-family: 'Montserrat', sans-serif;
+   p{
+       font-weight: 300;
+   }
+}
+.counters{
+    margin-right: 30px;
+    font-size:10px;
+    text-align: center;
+
+    strong{
+        font-size: 2em;
+    }
+    .status{
+        padding: 5px;
+        margin-bottom: 10px;
+        &.unanswered{
+            border: none;
+        }
+        &.answered{
+            border: 1px solid $color-green;
+            color: $color-green;
+        }
+        &.answered-accepted{
+            background:$color-green;
+            color: $color-white;
+        }
+    }
+}
+
+.delete-form{
+    display: inline;
+}
+
+.votes-control{
+    margin-right: 30px;
+    min-width: 60px;
+    text-align: center;
+    color: $gray-700;
+
+    span, a{
+        display: block;
+    }
+    span{
+        &.votes-count{
+            font-size: 25px;
+            color: $gray-600;
+        }
+    }
+    a{
+        cursor: pointer;
+
+        &.off,&.off:hover{
+            color: $gray-500;
+        }
+
+        &.favorites{
+            &.favoritted, &.favoritted:hover{
+                color: $warning;
+            }
+        }
+        &.favorite:hover{
+            color: $green;
+        }
+
+        &.vote-accept{
+            color: $green;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
